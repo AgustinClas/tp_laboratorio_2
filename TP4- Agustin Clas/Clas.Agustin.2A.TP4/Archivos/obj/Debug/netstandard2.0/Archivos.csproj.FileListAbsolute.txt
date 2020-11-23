@@ -1,0 +1,9 @@
+C:\Users\Ale\source\repos\Clas.Agustin.2A.TP4\Archivos\bin\Debug\netstandard2.0\Archivos.deps.json
+C:\Users\Ale\source\repos\Clas.Agustin.2A.TP4\Archivos\bin\Debug\netstandard2.0\Archivos.dll
+C:\Users\Ale\source\repos\Clas.Agustin.2A.TP4\Archivos\bin\Debug\netstandard2.0\Archivos.pdb
+C:\Users\Ale\source\repos\Clas.Agustin.2A.TP4\Archivos\obj\Debug\netstandard2.0\Archivos.csprojAssemblyReference.cache
+C:\Users\Ale\source\repos\Clas.Agustin.2A.TP4\Archivos\obj\Debug\netstandard2.0\Archivos.AssemblyInfoInputs.cache
+C:\Users\Ale\source\repos\Clas.Agustin.2A.TP4\Archivos\obj\Debug\netstandard2.0\Archivos.AssemblyInfo.cs
+C:\Users\Ale\source\repos\Clas.Agustin.2A.TP4\Archivos\obj\Debug\netstandard2.0\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\Ale\source\repos\Clas.Agustin.2A.TP4\Archivos\obj\Debug\netstandard2.0\Archivos.dll
+C:\Users\Ale\source\repos\Clas.Agustin.2A.TP4\Archivos\obj\Debug\netstandard2.0\Archivos.pdb
