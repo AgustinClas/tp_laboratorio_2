@@ -171,7 +171,7 @@ namespace FormPrincipal
             this.bolsillo.Name = "bolsillo";
             this.bolsillo.Size = new System.Drawing.Size(105, 21);
             this.bolsillo.TabIndex = 11;
-            this.bolsillo.SelectedIndex = 1;
+            this.bolsillo.SelectedIndex = 0;
             // 
             // button1
             // 
@@ -205,6 +205,7 @@ namespace FormPrincipal
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Agregar producto";
             this.ResumeLayout(false);
             this.PerformLayout();

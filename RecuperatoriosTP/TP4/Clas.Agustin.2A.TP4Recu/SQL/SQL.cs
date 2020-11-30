@@ -27,7 +27,7 @@ namespace SQL
                 using (SqlConnection conexion = new SqlConnection(@"Server=localhost\SQLEXPRESS;Database=TP4;Trusted_Connection=True;"))
                 {
                     conexion.Open();
-                    SqlCommand comando = new SqlCommand("SELECT * FROM TP_4", conexion);
+                    SqlCommand comando = new SqlCommand("SELECT * FROM StockSport", conexion);
                     SqlDataReader reader = comando.ExecuteReader();
 
                     while (reader.Read())
@@ -87,7 +87,7 @@ namespace SQL
             {
                 using (SqlConnection conexion = new SqlConnection(@"Server=localhost\SQLEXPRESS;Database=TP4;Trusted_Connection=True;"))
                 {
-                    string comandoStr = "DELETE FROM TP_4 WHERE Id = @id";
+                    string comandoStr = "DELETE FROM StockSport WHERE Id = @id";
 
                     SqlCommand comando = new SqlCommand(comandoStr, conexion);
                     comando.Parameters.AddWithValue("id", id);
@@ -111,12 +111,12 @@ namespace SQL
         public static bool AgregarCamiseta(Camiseta camiseta)
         {
             bool retorno;
-            try
-            {
+            //try
+            //{
                 using (SqlConnection conexion = new SqlConnection(@"Server=localhost\SQLEXPRESS;Database=TP4;Trusted_Connection=True;"))
                 {
                     //No se le pasa el id porque se le asigna automaticamente
-                    string comandoStr = "INSERT INTO TP_4(Talle, Equipacion, Numero, MangaOBolsillo, EsCamiseta) VALUES(@talle, @equipacion, @numero, @mangaOBolsillo, @esCamiseta)";
+                    string comandoStr = "INSERT INTO StockSport(Talle, Equipacion, Numero, MangaOBolsillo, EsCamiseta) VALUES(@talle, @equipacion, @numero, @mangaOBolsillo, @esCamiseta)";
 
                     SqlCommand comando = new SqlCommand(comandoStr, conexion);
                     comando.Parameters.AddWithValue("talle", camiseta.Talle);
@@ -135,11 +135,11 @@ namespace SQL
                     comando.ExecuteNonQuery();
                 }
                 retorno = true;
-            }
-            catch (Exception e)
+            //}
+            /*catch (Exception e)
             {
                 retorno = false;
-            }
+            }*/
 
             return retorno;
         }
@@ -156,7 +156,7 @@ namespace SQL
             {
                 using (SqlConnection conexion = new SqlConnection(@"Server=localhost\SQLEXPRESS;Database=TP4;Trusted_Connection=True;"))
                 {
-                    string comandoStr = "INSERT INTO TP_4(Talle, Equipacion, Numero, MangaOBolsillo, EsCamiseta) VALUES(@talle, @equipacion, @numero, @mangaOBolsillo, @esCamiseta)";
+                    string comandoStr = "INSERT INTO StockSport(Talle, Equipacion, Numero, MangaOBolsillo, EsCamiseta) VALUES(@talle, @equipacion, @numero, @mangaOBolsillo, @esCamiseta)";
 
                     SqlCommand comando = new SqlCommand(comandoStr, conexion);
                     comando.Parameters.AddWithValue("talle", pantalon.Talle);

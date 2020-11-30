@@ -73,7 +73,7 @@ namespace Entidades
             int auxManga = 0;
             Camiseta camiseta;
 
-            if (!int.TryParse(numero, out auxNum))
+            if (!int.TryParse(numero, out auxNum) || auxNum > 99)
                 auxNum = 10;
 
             if (manga == "Manga larga")
@@ -104,7 +104,7 @@ namespace Entidades
             int auxBolsillo = 0;
             Pantalon pantalon;
 
-            if (!int.TryParse(numero, out auxNum))
+            if (!int.TryParse(numero, out auxNum) || auxNum > 99)
                 auxNum = 10;
 
             if (bolsillo == "Con bolsillo")
